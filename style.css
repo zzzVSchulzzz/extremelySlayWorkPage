@@ -35,19 +35,26 @@ a:hover {
     border-color: #d5006d;
 }
 
- .cat-img {
+        .cat-container {
             position: absolute; /* Позволяет размещать изображения в произвольных позициях */
+            border-radius: 50%; 
+            overflow: hidden; /* Скрывает части изображения, выходящие за границы круга */
             width: 100px; 
-            height: auto;
-            border-radius: 50%;
-            opacity: 0.8; 
-            transition: transform 0.5s;
-        }
-        .cat-img:hover {
-            transform: scale(1.1); 
+            height: 100px;
+            animation: glow-in 0.5s ease-in-out forwards, fade-out 5s ease-in forwards; /* Анимации */
         }
 
- @keyframes glow-in {
+        .cat-img {
+            width: 100%; 
+            height: 100%;
+            transition: transform 0.5s; /* Плавное изменение при наведении */
+        }
+
+        .cat-container:hover .cat-img {
+            transform: scale(1.1); /* Увеличение изображения при наведении */
+        }
+
+        @keyframes glow-in {
             0% {
                 opacity: 0;
                 transform: scale(0.5); /* Начальное состояние с уменьшением размера */
@@ -66,5 +73,3 @@ a:hover {
             }
             100% {
                 opacity: 0; /* Пропадает в конце */
-            }
-        }
