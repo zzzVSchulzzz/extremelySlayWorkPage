@@ -38,7 +38,8 @@ a:hover {
  .cat-img {
             position: absolute; /* Позволяет размещать изображения в произвольных позициях */
             width: 100px; 
-            height: auto; 
+            height: auto;
+            border-radius: 50%;
             opacity: 0.8; 
             transition: transform 0.5s;
         }
