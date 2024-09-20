@@ -7,24 +7,37 @@
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zqFrNNGWXb_eUw3_LAazp5Ll6AbjDhWjRIGHMnfneryv0Q0eid7s87fNzulLoVmK58Y&usqp=CAU"
         ];
 
+        // Массив с URL изображений котиков
+        const catImages = [
+            "https://placekitten.com/200/200",
+            "https://placekitten.com/201/201",
+            "https://placekitten.com/202/202",
+            "https://placekitten.com/203/203",
+            "https://placekitten.com/204/204"
+        ];
+
         // Функция для генерации случайного изображения котика
         function createRandomCatImage() {
-            const img = document.createElement("img");
+            const imgContainer = document.createElement("div"); // Создаем контейнер для изображения
+            imgContainer.classList.add("cat-container"); // Добавляем класс к контейнеру
+
+            const img = document.createElement("img"); // Создаем элемент изображения
             img.src = catImages[Math.floor(Math.random() * catImages.length)];
-            img.classList.add("cat-img");
+            img.classList.add("cat-img"); // Добавляем класс к изображению
+            imgContainer.appendChild(img); // Добавляем изображение в контейнер
 
             // Получение случайных координат в пределах окна
             const x = Math.random() * (window.innerWidth - 100); // Учитываем ширину изображения
             const y = Math.random() * (window.innerHeight - 100); // Учитываем высоту изображения
 
-            img.style.left = `${x}px`;
-            img.style.top = `${y}px`;
+            imgContainer.style.left = `${x}px`; // Устанавливаем координаты X
+            imgContainer.style.top = `${y}px`; // Устанавливаем координаты Y
 
-            document.body.appendChild(img);
+            document.body.appendChild(imgContainer); // Добавляем контейнер в тело документа
 
             // Удаление изображения через 5 секунд
             setTimeout(() => {
-                img.remove();
+                imgContainer.remove();
             }, 5000);
         }
 
@@ -34,4 +47,4 @@
         }
 
         // Создаем случайные изображения котиков каждую секунду
-        setInterval(createRandomCatImage, 1000);
+        setInterval(createRandomCatImage, 1500);
