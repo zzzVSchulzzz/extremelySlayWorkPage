@@ -1,4 +1,3 @@
-css
 /* Общие стили для всего документа */
 body {
     background-color: #fce4ec; /* Светло-розовый фон */
@@ -6,69 +5,32 @@ body {
     color: #6a1b9a; /* Тёмно-фиолетовый цвет текста */
     margin: 0;
     padding: 0;
+    line-height: 1.6; /* Интервал между строками */
 }
 
 /* Заголовки */
-h1, h2, h3 {
+h1, h2 {
     color: #e91e63; /* Яркий розовый для заголовков */
     text-align: center;
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.6);
-}
-
-/* Основной контейнер */
-.container {
-    width: 80%;
-    margin: auto;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: #ffffff; /* Белый фон для контейнера */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Кнопки */
-button {
-    background-color: #ff80ab; /* Яркая розовая кнопка */
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #ff4081; /* Темнее при наведении */
 }
 
 /* Стили для ссылок */
 a {
-    color: #f50057; /* Ярко-розовый цвет ссылок */
-    text-decoration: none;
-    border-bottom: 1px dashed #f50057; /* Дашированные ссылки */
+    color: #ff80ab; /* Яркая розовая цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-bottom: 1px dashed #ff80ab; /* Дашированные ссылки */
+    display: inline-block;
+    margin: 5px 0; /* Отступы между ссылками */
+    transition: color 0.3s, border-color 0.3s; /* Плавный переход цвета */
 }
 
 a:hover {
-    color: #d5006d; /* Более тёмный розовый при наведении */
+    color: #d5006d; /* Более темный розовый при наведении */
+    border-color: #d5006d; /* Изменение цвета чаши границы */
 }
 
-/* Изображения */
-img {
-    border-radius: 15px; /* Закруглённые углы изображений */
-    max-width: 100%;
-}
-
-/* Милые иконки */
-.icon {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-}
-
-/* Футер */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffebee; /* Светло-розовый футер */
-    border-top: 5px solid #f50057;
+/* Комментарии */
+.comment {
+    color: #bbb; /* Серый цвет для комментариев */
+    font-style: italic; /* Курсив */
 }
