@@ -21,20 +21,16 @@ h1, h2 {
 
 /* Стили для ссылок */
 a {
-    color: #ff80ab; 
+    color: #ff80ab;
     text-decoration: none;
     border-bottom: 1px dashed #ff80ab; /* Дашированные ссылки */
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
+    padding-left: 20px;
     transition: color 0.3s, border-color 0.3s;
 }
 
 a:hover {
-    color: #d5006d; 
+    color: #d5006d;
     border-color: #d5006d;
 }
-
-/* Комментарии */
-.comment {
-    color: #bbb;
-    font-style: italic;
