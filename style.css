@@ -1,36 +1,35 @@
 /* Общие стили для всего документа */
 body {
-    background-color: #fce4ec; /* Светло-розовый фон */
+    background-color: #fce4ec;
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Игривый шрифт */
-    color: #6a1b9a; /* Тёмно-фиолетовый цвет текста */
+    color: #6a1b9a;
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Интервал между строками */
+    line-height: 1.6;
 }
 
 /* Заголовки */
 h1, h2 {
-    color: #e91e63; /* Яркий розовый для заголовков */
+    color: #e91e63;
     text-align: center;
 }
 
 /* Стили для ссылок */
 a {
-    color: #ff80ab; /* Яркая розовая цвет ссылки */
-    text-decoration: none; /* Убираем подчеркивание */
+    color: #ff80ab; 
+    text-decoration: none;
     border-bottom: 1px dashed #ff80ab; /* Дашированные ссылки */
     display: inline-block;
-    margin: 5px 0; /* Отступы между ссылками */
-    transition: color 0.3s, border-color 0.3s; /* Плавный переход цвета */
+    margin: 5px 0;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 a:hover {
-    color: #d5006d; /* Более темный розовый при наведении */
-    border-color: #d5006d; /* Изменение цвета чаши границы */
+    color: #d5006d; 
+    border-color: #d5006d;
 }
 
 /* Комментарии */
 .comment {
-    color: #bbb; /* Серый цвет для комментариев */
-    font-style: italic; /* Курсив */
-}
+    color: #bbb;
+    font-style: italic;
