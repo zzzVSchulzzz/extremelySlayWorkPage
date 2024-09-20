@@ -7,15 +7,6 @@
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zqFrNNGWXb_eUw3_LAazp5Ll6AbjDhWjRIGHMnfneryv0Q0eid7s87fNzulLoVmK58Y&usqp=CAU"
         ];
 
-        // Массив с URL изображений котиков
-        const catImages = [
-            "https://placekitten.com/200/200",
-            "https://placekitten.com/201/201",
-            "https://placekitten.com/202/202",
-            "https://placekitten.com/203/203",
-            "https://placekitten.com/204/204"
-        ];
-
         // Функция для генерации случайного изображения котика
         function createRandomCatImage() {
             const imgContainer = document.createElement("div"); // Создаем контейнер для изображения
