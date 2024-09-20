@@ -46,3 +46,25 @@ a:hover {
         .cat-img:hover {
             transform: scale(1.1); 
         }
+
+ @keyframes glow-in {
+            0% {
+                opacity: 0;
+                transform: scale(0.5); /* Начальное состояние с уменьшением размера */
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0); /* Нет свечения в начале */
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1); /* Конечное состояние с нормальным размером */
+                box-shadow: 0 0 20px rgba(255, 204, 204, 1); /* Свечение по завершении */
+            }
+        }
+
+        @keyframes fade-out {
+            0% {
+                opacity: 1; /* Полная видимость в начале */
+            }
+            100% {
+                opacity: 0; /* Пропадает в конце */
+            }
+        }
