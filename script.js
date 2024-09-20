@@ -7,7 +7,7 @@
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zqFrNNGWXb_eUw3_LAazp5Ll6AbjDhWjRIGHMnfneryv0Q0eid7s87fNzulLoVmK58Y&usqp=CAU"
         ];
 
-        // Функция для генерации случайного изображения котика
+// Функция для генерации случайного изображения котика
         function createRandomCatImage() {
             const imgContainer = document.createElement("div"); // Создаем контейнер для изображения
             imgContainer.classList.add("cat-container"); // Добавляем класс к контейнеру
