@@ -34,3 +34,14 @@ a:hover {
     color: #d5006d;
     border-color: #d5006d;
 }
+
+ .cat-img {
+            position: absolute; /* Позволяет размещать изображения в произвольных позициях */
+            width: 100px; 
+            height: auto; 
+            opacity: 0.8; 
+            transition: transform 0.5s;
+        }
+        .cat-img:hover {
+            transform: scale(1.1); 
+        }
